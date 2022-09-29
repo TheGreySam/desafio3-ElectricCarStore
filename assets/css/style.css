@@ -1,0 +1,36 @@
+body {
+    font-weight: bold;
+}
+
+.Filtro {
+    background-color: gray;
+    padding: 10pt;
+    text-align: center;
+}
+
+.Navegacion {
+    background-color: blue;
+    color: white;
+    padding: 10pt;
+}
+/* Mobile */
+@media only screen and (max-width: 576px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: white;
+    }
+}
+
