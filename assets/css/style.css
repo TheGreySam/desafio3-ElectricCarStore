@@ -28,6 +28,12 @@ body {
     justify-content: center;
     grid-area: principal;
 }
+.Lista {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200pt, 1fr));
+    overflow: hidden;
+    height: 290pt;
+}
 .card-image {
     object-fit: cover;
     max-width: 200pt;
@@ -82,6 +88,16 @@ body {
         padding: 10pt;
         text-align: center;
         width: 1000pt;
+    }
+    .Principal {
+        display: block;
+        align-items: center;
+    }
+    .Lista {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200pt, 1fr));
+        overflow: auto;
+        height: 420pt;
     }
     .boton-mobile {
         display: none;
