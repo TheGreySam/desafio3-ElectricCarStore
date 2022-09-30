@@ -3,7 +3,7 @@ body {
 }
 
 .Filtro {
-    background-color: gray;
+    background-color: rgb(167, 167, 167);
     padding: 10pt;
     text-align: center;
    
@@ -60,7 +60,36 @@ body {
 /* Tablet */
 @media only screen and (min-width: 992px) {
     body {
-        background-color: yellow;
+        background-color: white;
+        display: grid;
+        grid-template-areas: 
+        "navegacion navegacion navegacion"
+        "filtro principal principal"
+        "footer footer footer";
+    }
+    .Filtro {
+        background-color: rgb(167, 167, 167);;
+        padding: 10pt;
+        text-align: center;
+        width: 150pt;
+    }
+    .Principal {
+        display: block;
+        align-items: center;
+        
+    }
+    .Lista {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200pt, 1fr));
+        overflow: none;
+        height: 300pt;
+    }
+    .boton-mobile {
+        display: none;
+    }
+    .opciones-nav {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -84,7 +113,7 @@ body {
     }
   
     .Filtro {
-        background-color: gray;
+        background-color: rgb(167, 167, 167);;
         padding: 10pt;
         text-align: center;
         width: 1000pt;
